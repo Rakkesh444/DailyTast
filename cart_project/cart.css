@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    max-width: 100%;
+    /* overflow: hidden; */
+}
+
+body a {
+    text-decoration: none;
+    color: #2b2929;
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+.navbar .navbar_01 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #faebd7;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar a {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.count {
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    background-color: #2b2929;
+    color: #fff;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.cart-icon {
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.cart_side-bar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 9999;
+    height: 100vh;
+    width: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #c1e7f3;
+    transition: 1s;
+}
+
+.cart_side-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.cart_side-bar.active {
+    right: 0;
+    transition: .6s;
+}
+
+/* .cart_side-bar.remove {
+    right: -100%;
+    transition: .6s;
+} */
+
+.cart_side-bar img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #6a7c81;
+}
+
+.product_container .product_box {
+    display: grid;
+    grid-template-columns: 100px 200px 100px;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #c6c9ca;
+}
+
+.product_container .header {
+    text-align: center;
+    color: #2b2929;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.product_container .price_count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product_container .inc_Price {
+    position: relative;
+    left: 50px;
+}
+
+.placeorder_totals {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.placeorder_totals button {
+    background-color: #218602;
+    border: none;
+    color: #fff;
+    padding: 4px 15px;
+}
+
+.product_container .price_count input {
+    width: 50px;
+    text-align: center;
+}
+
+.product_container .products_text div {
+    padding-bottom: 10px;
+}
+
+.product_container .price_box {
+    display: flex;
+    gap: 20px;
+}
+
+.product_container .price_box p strong {
+    color: #218602;
+}
+
+.product_container .title {
+    color: #6a7c81;
+}
+
+.product_container .close_btn {
+    cursor: pointer;
+    font-size: 35px;
+    position: relative;
+    top: 10px;
+    right: -10px;
+    transition: .7s;
+}
+
+.product_container .product_delete_icon {
+    cursor: pointer;
+    color: #ff0000;
+}
+
+/* Container styling */
+.card-items {
+    max-width: 1200px;
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+}
+
+.card-items .cards img {
+    width: 100%;
+    transition: .6s;
+}
+
+.card_img {
+    overflow: hidden;
+
+}
+
+.card-items .cards .card_img:hover img {
+    transform: scale(1.5);
+    transition: .6s;
+}
+
+.card-items .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 20px;
+}
+
+.card-items .cards .card_01 {
+    background-color: #c1e7f3;
+    /* padding: 20px; */
+    box-shadow: 0 0 10px #6a7c81;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card-items .cards .card_01 h3 {
+    color: #6a7c81;
+}
+
+.card-items .cards .card_01 p strong {
+    color: #218602;
+}
+
+.card-items .cards .card_text {
+    padding: 20px;
+}
+
+.card_01_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_01_btn button {
+    background: #6a7c81;
+    border: none;
+    padding: 2px 20px;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.card_01_btn .card_cart-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.card_01_btn button:hover {
+    transition: .4s;
+    transform: scale(1.1);
+}
+
+/* Container styling End*/
