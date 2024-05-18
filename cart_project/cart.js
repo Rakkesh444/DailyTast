@@ -1,3 +1,5 @@
+
+// Side Bare Responsive
 const carticon = document.querySelector('.cart-icon');
 const cartsidebar = document.querySelector('.cart_side-bar');
 const closebtn = document.querySelector('.close_btn');
@@ -8,7 +10,7 @@ carticon.addEventListener('click', () => {
 closebtn.addEventListener('click', () => {
     cartsidebar.classList.remove('active')
 });
-
+// Side Bare Responsive end
 
 //Loaded Function
 document.addEventListener('DOMContentLoaded', appFunctions());
@@ -16,7 +18,7 @@ function appFunctions() {
     loadedcontent();
 }
 
-
+// Add Functionality in appFunction
 function loadedcontent() {
     //item Removed form cart
     let productdeleteicon = document.querySelectorAll('.product_delete_icon');
