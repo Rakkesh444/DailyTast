@@ -18,10 +18,12 @@ body a {
     color: #2b2929;
 }
 
+/* Main Navbar */
 .navbar {
     overflow: hidden;
 }
 
+/* Logo Navbare Styling */
 .navbar .navbar_01 {
     display: flex;
     align-items: center;
@@ -59,6 +61,9 @@ body a {
     cursor: pointer;
 }
 
+/* Logo Navbare Styling End */
+
+/* Side Bar Styling */
 .cart_side-bar {
     position: fixed;
     top: 0;
@@ -72,24 +77,31 @@ body a {
     transition: 1s;
 }
 
-.cart_side-bar::-webkit-scrollbar {
-    display: none;
-}
-
+/* Add Active Class In Side Bar for Responsinve Perpose */
 .cart_side-bar.active {
     right: 0;
     transition: .6s;
 }
 
-/* .cart_side-bar.remove {
-    right: -100%;
-    transition: .6s;
-} */
+/* To Hiding Scrolling bar in Side Navigation bar */
+.cart_side-bar::-webkit-scrollbar {
+    display: none;
+}
 
+/* Sidebar Image Styling */
 .cart_side-bar img {
     width: 100%;
     border-radius: 10px;
     border: 1px solid #6a7c81;
+}
+
+/* Styling For Sidebar Invidual Product Items */
+
+.product_container .header {
+    text-align: center;
+    color: #2b2929;
+    font-size: 30px;
+    margin-top: 40px;
 }
 
 .product_container .product_box {
@@ -99,13 +111,6 @@ body a {
     align-items: center;
     padding: 20px;
     border-bottom: 1px solid #c6c9ca;
-}
-
-.product_container .header {
-    text-align: center;
-    color: #2b2929;
-    font-size: 30px;
-    margin-top: 40px;
 }
 
 .product_container .price_count {
