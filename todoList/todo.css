@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* golbal styling */
+body a {
+    text-decoration: none;
+    color: #000;
+}
+
+body li {
+    list-style: none;
+}
+
+/* navigationbar styling */
+.Navbar_Section nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #393e46;
+    width: 100%;
+}
+
+/* nav logo */
+.Navbar_Section nav .logo {
+    color: #16df3b;
+    font-weight: 500;
+    letter-spacing: .2em;
+    display: flex;
+    align-items: center;
+}
+
+.Navbar_Section nav li {
+    display: inline;
+    padding-left: 20px;
+    transition: .7s;
+}
+
+.Navbar_Section nav li a {
+    font-weight: 500;
+    transition: .7s;
+    position: relative;
+}
+
+.Navbar_Section nav li a:hover::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background-color: #16df3b;
+    top: 23px;
+    transition: .7s;
+    border-radius: 5px;
+}
+
+/* navbar link hover */
+.Navbar_Section nav li a:hover {
+    color: rgb(7, 175, 38);
+    transition: .7s;
+}
+
+/* navbar_buttons stylibg */
+.navbar_buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.navbar_buttons a {
+    padding-left: 30px;
+    color: #fff;
+}
+
+.navbar_buttons a:hover {
+    color: #16df3b;
+    transition: .7s;
+}
+
+.navbar_buttons .admin_btn {
+    background-color: #000;
+    text-align: center;
+    padding: 3px 29px;
+    border-radius: 10px;
+    color: #16df3b;
+    display: flex;
+    gap: 5px;
+}
+
+.navbar_buttons .admin_btn:hover {
+    background-color: #16df3b;
+    color: #fff;
+    transition: .7s;
+}
+
+/* navbar-icon */
+.navbar-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-icon .line {
+    height: 2px;
+    width: 20px;
+    background-color: #16df3b;
+    margin-bottom: 5px;
+    position: relative;
+    top: 10px;
+
+}
+
+.navbar-icon .line:nth-child(1) {
+    width: 17px;
+}
+
+.navbar-icon .line:nth-child(2) {
+    width: 30px;
+}
+
+.navbar-icon .line:nth-child(3) {
+    width: 20px;
+}
+
+/* body */
+.todoList {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(50px);
+}
+
+.todoList .todos {
+    /* background-color: #30284e; */
+    height: 400px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding-top: 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+}
+
+
+.todos .todo_text {
+    background-color: rgba(122, 214, 17, 0.19);
+    width: 100% auto;
+    padding: 20px 100px;
+    border-radius: 9px;
+}
+
+.todoList h3 {
+    color: #16df3b;
+    font-weight: 400;
+    letter-spacing: .3em;
+    font-size: 30px;
+}
+
+.user_input {
+    display: flex;
+    justify-content: center;
+}
+
+.todoList .todos input {
+    padding: 5px 7px;
+    width: 100%;
+    outline: none;
+    background: rgba(0, 0, 0, 0.19);
+    border: none;
+    border-radius: 10px;
+    transition: .7s;
+}
+
+.todoList .todos input:focus {
+    transition: .7s;
+    border-radius: 0px;
+    border: 1.5px solid #16df3b;
+    background-color: rgba(122, 214, 17, 0.19);
+}
+
+.todoList .todos span button {
+    padding: 4px 20px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    left: 5px;
+    background-color: #16df3b;
+    cursor: pointer;
+}
+
+.todoList .todos h3,
+input,
+.todolist {
+    margin-bottom: 20px;
+}
+
+.todoList .background {
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+    background-color: #7ad61130;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+
+.todolist .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    border: 1px solid #7ad61130;
+    color: #16df3b;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+.todolist .items:hover {
+    background-color: #7ad61130;
+}
+
+.para {
+    text-decoration: line-through;
+}
+
+
+.todolist .tick {
+    color: #0cc3e4;
+}
+
+.todolist .trash {
+    color: red;
+}
+
+.todolist .actions {
+    display: flex;
+    gap: 30px;
+}
+
+/* Media Query */
+@media all and (max-width:769px) {
+
+    /* Navigation Bar Styling */
+    .Navbar_Section nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #393e46;
+        width: 100%;
+    }
+
+    .Navbar_Section nav .logo {
+        align-self: flex-start;
+    }
+
+    .Navbar_Section nav ul li {
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .nav_lists {
+        display: none;
+        transition: transform .7s;
+    }
+
+    .nav_lists.show {
+        display: block;
+        transition: transform .7s;
+    }
+
+    .Navbar_Section nav ul li a {
+        color: #16df3b;
+
+    }
+
+    .navbar_buttons {
+        display: block;
+        text-align: center;
+        display: none;
+    }
+
+    .admin_btn {
+        position: relative;
+        left: 15px;
+    }
+
+    .navbar-icon {
+        display: block;
+        align-self: flex-end;
+        position: absolute;
+    }
+
+
+}
