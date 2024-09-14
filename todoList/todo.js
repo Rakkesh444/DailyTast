@@ -5,8 +5,6 @@ navbar_icon.addEventListener('click', () => {
     nav_lists.classList.toggle('show');
 });
 
-
-
 const addtodo = document.querySelector('.addtodo');
 const input = document.querySelector('.input');
 const todolist = document.querySelector('.todolist');
